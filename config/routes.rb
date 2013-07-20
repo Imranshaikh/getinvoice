@@ -1,4 +1,15 @@
 Getinvoice::Application.routes.draw do
+  get "site/index"
+
+  get "site/register"
+
+  get "site/login"
+
+  get "site/logout"
+
+
+  root :to => "site#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

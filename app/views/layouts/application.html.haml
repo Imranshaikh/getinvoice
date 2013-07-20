@@ -1,0 +1,17 @@
+!!! 5
+%html
+  %head
+    %title
+      Get Invoice
+    = stylesheet_link_tag    "applications", :media => :all
+    = javascript_include_tag "applications"
+    = csrf_meta_tags
+  %body
+    %header
+      %nav
+        .container-fluid
+          .row-fluid
+            = render "layouts/navigation"
+    = yield
+
+    
